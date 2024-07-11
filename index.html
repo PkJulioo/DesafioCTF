@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>IMPÉRIO</h1></header>
+
+    <section>
+      <div class="section-two">
+        <div class="imagem-fundo">
+          <img src="IMG/mosaic-dark-6016x3384-17395.jpg" alt="" />
+        </div>
+        <div class="ct">
+          <div class="bl-left">
+            <h1>Informações confidenciais do império:</h1>
+            <div class="search-container">
+              <div class="search">
+                <label for="filters">Buscar:</label>
+                <div class="alinhar">
+                  <div class="dropdown">
+                    <button class="dropbtn">filtros</button>
+                    <div class="dropdown-content">
+                      <a href="#" onclick="showPermissionMessage()"
+                        >Localização</a
+                      >
+                      <a href="#" onclick="showPermissionMessage()">Armas</a>
+                      <a href="#" onclick="showPermissionMessage()">Soldados</a>
+                      <a href="#" onclick="showPermissionMessage()">Arquivos</a>
+                    </div>
+                  </div>
+                  <div id="permission-message" class="permission-message">
+                    <p id="permissao">Sem permissao</p>
+                    <span id="permissao-true"
+                      >Escolha o filtro antes de digitar</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="password">
+                <label for="password">Chave:</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Digite sua chave"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="bl-right">
+            <img src="IMG/img5.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function showPermissionMessage() {
+        document.getElementById("permissao").style.display = "block";
+        document.getElementById("permissao-true").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
